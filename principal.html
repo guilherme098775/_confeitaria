@@ -3,41 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
     <title>Candy Dreams</title>
 </head>
 <body>
     <header>
         <h1>Dream Candy</h1>
     </header>
-    <nav>
+    <nav id="menu">
         <a href="principal.html">Home</a>
         <a href="Produto.html">Cardapio</a>
         <a href="sobre.html">Sobre nós</a>
         <a href="contato.html">Contato</a>
-        <input type="search">
     </nav>
     <main>
         <article>
-            <h1>Bem Vindo!</h1>
-            <p>Confira nossos produtos</p>
-            <nav>
-                <img src="imagens/bolo-de-chocolate-125.jpg" alt="">Bolos
-                <img src="imagens/docinhos-125.jpg" alt=""> Docinhos
-                <img src="imagens/salgados-125.jpg" alt=""> Salgados
-                <img src="imagens/sobremesas-125.jpg" alt=""> Sobremesas
-                <img src="imagens/torta-doce-125.jpg" alt=""> Tortas
-            </nav>
-            <h1>Destaques</h1>
-            <nav>
-                <img src="imagens/bolo-destaque-275.jpg" alt=""> Bolo De Chocolate Granulado
-                <img src="imagens/bombom-destaque-275.jpg" alt=""> Bombom de Travessa de Uva
-                <img src="imagens/mousse-destaque.jpeg" alt=""> Mousse de Maracuja
-                <img src="imagens/pudim-destaque-275.jpg" alt=""> Pudim Tradicional
+                <h1 class="saudacao">Bem Vindo!</h1>
+            <br>
+                <h2>Destaques</h2>
+            <nav class="destaque">
+                <picture class="cardapio">
+                    <a href="#"><img src="imagens/bolo-de-chocolate-125.jpg" alt=""></a>
+                    <figcaption>Bolos</figcaption>
+                </picture>
+                <picture class="cardapio">
+                    <a href="#"><img src="imagens/docinhos-125.jpg" alt=""></a>
+                   <figcaption>Doces</figcaption>
+                </picture>
+                <picture class="cardapio">
+                    <a href="#"><img src="imagens/salgados-125.jpg" alt=""></a>
+                    <figcaption>Salgados</figcaption>
+                </picture>
+                <picture class="cardapio">
+                    <a href="#"><img src="imagens/pudim-destaque_125.jpg" alt=""></a>
+                   <figcaption>Pudim</figcaption>
+                </picture>
             </nav>
         </article>
         <aside>
-        <p>Venha conferir nossa pagina no Instagram!</p>
-        <button>Instagram</button>
+            <p>Venha conferir nossa pagina no Instagram!</p>
+            <button>
+                <a href="#"><img src="imagens/logos/logo-inst.webp" alt=""></a>
+                <figcaption>follow to Instagram</figcaption>
+            </button>
         </aside>
     </main>
     <footer>
