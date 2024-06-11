@@ -1,16 +1,7 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: Better Spring;
-    src: url(//fonte/Better\ Spring.ttf);
-    src: url(//fonte/Better\ Spring.otf);
-}
-
-@font-face {
-    font-family: BebasNeue;
-    src: url(//fonte/BebasNeue-Regular.ttf);
-    src: url(//fonte/BebasNeue-Regular.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
     --color1 :#193C40;
@@ -19,21 +10,27 @@
     --color4 :#D96941;
     --color5 :#A62B1F;
     --fonte1 :Arial, Helvetica, sans-serif;
-    --fonte2 :'Better Spring', cursive;
-    --fonte3 :'BebasNeue', Arial, Helvetica, sans-serif;
+    --fonte2 : 'Cedarville Cursive', cursive;
+    --fonte3 :'Bebas Neue', Arial, Helvetica, sans-serif;
 }
 
 *{
     margin: 0;
 }
 
-header {
-    background-color: var(--color4);
-    text-align: center;
-    padding: 25px;
+body {
+    width: 209.6vh;
 }
 
-/* modificaçao menu e barra de pesquisa */
+header {
+    font-family: var(--fonte2);
+    font-size: 1.6em;
+    background-color: var(--color4);
+    text-align: center;
+    padding: 40px;
+}
+
+/* Barra de Navegação*/
 
 nav#menu{
     background-color: var(--color4);
@@ -54,10 +51,40 @@ nav#menu a:hover {
     border-radius: 20px;
 }
 
-.saudacao {
+#divbusca {
+    position: relative;
+    display: inline-block;
+    margin-left: 100vh;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+}
+
+#txtbusca{
+    float:left;
+    background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:260px;
+  }
+
+#bntbusca {
+    position: absolute;
+    width: 25px;
+    border-radius: 10px;
+    top: 4px;
+}
+
+/* Area dos destaques */
+
+h2 {
+    font-family: var(--fonte3);
     text-align: center;
-    font-size: 3em;
-    font-family: var(--fonte2);
+    font-size: 2em;
 }
 
 .destaque{
@@ -78,16 +105,21 @@ nav#menu a:hover {
 .cardapio img{
     width: 250px;
     height: 300px;
+    border: 1px solid black;
+    padding: 5px;
+    
 }
 
 .cardapio figcaption{
     position: relative;
-    top: 0px;
+    top: -16px;
     right: 20px;
     font-size: 40px;
     color: black;
-    text-shadow: 0px 0px 0px black;
+    text-shadow: 1px 1px 1px black;
 }
+
+/* Icone de visita instagram*/
 
 aside {
     position: relative;
@@ -105,19 +137,16 @@ aside div {
 }
 
 aside img{
-    width: 1em;
+    width: 2em;
 }
 
 aside button {
     position: absolute;
-    left: 45%;
+    left: 50%;
     border-radius: 10px;
     display: inline-flex;
     margin: top 10px;
 }
 
-footer {
-    display: inline-block;
-}
-
+/* footer*/ 
 
