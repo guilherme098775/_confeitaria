@@ -30,12 +30,17 @@ header {
     padding: 40px;
 }
 
+header h1 {
+    text-shadow: 4px 3px 0px rgba(102, 101, 101, 0.534);
+}
+
 /* Barra de Navegação*/
 
 nav#menu{
     background-color: var(--color4);
     position: relative;
     padding: 10px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.493);
 }
 
 nav#menu a{
@@ -49,6 +54,7 @@ nav#menu a:hover {
     text-decoration: underline;
     transition: 0.6s;
     border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
 }
 
 #divbusca {
@@ -84,7 +90,8 @@ nav#menu a:hover {
 h2 {
     font-family: var(--fonte3);
     text-align: center;
-    font-size: 2em;
+    font-size: 4em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.596);
 }
 
 .destaque{
@@ -122,31 +129,46 @@ h2 {
 /* Icone de visita instagram*/
 
 aside {
-    position: relative;
     background-color: var(--color4);
-    padding-bottom: 50px;
-}
-
-aside p{
-    font-size: 2em;
     text-align: center;
+    font-size: 2em;
 }
 
-aside div {
-    background-color: var(--color4);
-}
-
-aside img{
-    width: 2em;
-}
-
-aside button {
-    position: absolute;
-    left: 50%;
-    border-radius: 10px;
-    display: inline-flex;
-    margin: top 10px;
+aside img {
+    width: 60px;
+    height: 60px;
 }
 
 /* footer*/ 
 
+footer {
+    columns: 3;
+}
+
+#informacoes{
+    margin-top: 25px;
+}
+
+#secoes ul {
+   
+    padding: 10px;
+}
+
+#secoes li {
+    padding: 5px;
+    list-style: none;
+    
+}
+
+#secoes a {
+    color: black;
+    text-decoration: none;
+}
+
+#secoes li:hover {
+    background-color: slategray;
+    width: 150px;
+    border-radius: 15px;
+    text-decoration: underline;
+    transition: 0.6s;
+}
